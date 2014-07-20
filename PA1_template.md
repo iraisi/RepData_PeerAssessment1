@@ -101,15 +101,6 @@ maxInterval<- activity.avgSteps$interval[which.max(activity.avgSteps$steps)]
 maxSteps <- max(activity.avgSteps$steps)
 ```
 
-Maximum interval information is given below  
-```{r}
-# Index: 
-maxIndex
-# Interval: 
-maxInterval
-# Steps
-maxSteps
-```
 
 # Imputing missing values
 
