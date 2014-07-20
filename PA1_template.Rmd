@@ -66,8 +66,20 @@ maxInterval<- activity.avgSteps$interval[which.max(activity.avgSteps$steps)]
 maxSteps <- max(activity.avgSteps$steps)
 ```
 
+Maximum interval information is given below  
+```{r}
+# Index: 
+maxIndex
+# Interval: 
+maxInterval
+# Steps
+maxSteps
+```
+
 
 # Imputing missing values
+We will impute the dataset on the basis of mean steps calculation.
+
 ```{r}
 # number of missing values in the dataset
 missingValues <- nrow(activity) - nrow(na.omit(activity))
