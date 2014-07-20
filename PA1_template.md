@@ -101,8 +101,39 @@ maxInterval<- activity.avgSteps$interval[which.max(activity.avgSteps$steps)]
 maxSteps <- max(activity.avgSteps$steps)
 ```
 
+Maximum interval information is given below  
+
+```r
+# Index: 
+maxIndex
+```
+
+```
+## [1] 104
+```
+
+```r
+# Interval: 
+maxInterval
+```
+
+```
+## [1] 835
+```
+
+```r
+# Steps
+maxSteps
+```
+
+```
+## [1] 206.2
+```
+
 
 # Imputing missing values
+We will impute the dataset on the basis of mean steps calculation.
+
 
 ```r
 # number of missing values in the dataset
@@ -168,7 +199,7 @@ c + geom_histogram(aes(weight = steps), binwidth = 4, color = "white", fill = "o
         xlab("Date") 
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
 
 # mean and meadin with no missing values
 
@@ -203,7 +234,7 @@ d <- ggplot(activity.imp, aes(x= interval, y=steps)) + geom_line(size=1, color="
 d  + facet_grid(days ~ .) # add facets
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13.png) 
+![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14.png) 
 
 
 
